@@ -1,0 +1,100 @@
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  gap: 200px;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4f7, #c0d9e8); /* Soft gradient background */
+}
+
+.paper {
+  border: 1px solid turquoise;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background for contrast */
+  overflow: hidden; /* Ensures children elements don’t overflow */
+}
+
+.paper h5 {
+  border-bottom: 1px solid black;
+  text-align: center;
+  background: linear-gradient(135deg, hsl(174, 72%, 36%), hsl(174, 72%, 26%)); /* Gradient background */
+  color: white; /* White text for better contrast */
+  font-size: xx-large;
+  margin: 0;
+  padding: 10px; /* Padding for better spacing */
+  border-top-left-radius: 8px; /* Match container's rounded corners */
+  border-top-right-radius: 8px;
+}
+
+h1, h2, h3, h4 { 
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+  color: #333; /* Darker color for better readability */
+
+  padding: 10px; /* Padding for better spacing */
+  margin: 0; /* Remove default margins */
+}
+
+h5 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333; /* Consistent text color */
+}
+
+img {
+  width: 100%;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.paper1 {
+  height: 400px;
+  background: linear-gradient(135deg, #f0f4f7, #c0d9e8); /* Gradient background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.paper1 textarea {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(240, 50%, 90%);
+  font-size: 1.5rem;
+  border: none;
+  overflow-y: scroll;
+  padding: 10px; /* Padding for better spacing */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inset shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.output {
+  background-color: hsl(240, 50%, 90%);
+  padding: 20px; /* More padding for better spacing */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  word-break: break-all;
+  white-space: normal;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inset shadow for depth */
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  * {
+    font-size: 1rem;
+  }
+}
