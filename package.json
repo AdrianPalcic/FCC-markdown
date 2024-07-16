@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "marked": "^13.0.2",
     "prism": "^1.0.0",
     "Prism": "^2.0.0",
